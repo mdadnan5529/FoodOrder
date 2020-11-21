@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Nov 21 23:06:04 IST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0175-ebe0-9198-00000229c4e0 
+on database directory memory:/home/adnan/Desktop/food_order/472861c4-418e-43a7-b5b9-64d2f0eb8b50 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@446cdf90 
+Loaded from file:/home/adnan/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=15+36-1562
+user.dir=/home/adnan/Desktop/food_order
+os.name=Linux
+os.arch=amd64
+os.version=5.8.0-29-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

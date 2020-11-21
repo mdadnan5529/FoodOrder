@@ -1,16 +1,23 @@
-package com.javabootcamp.food_order.restaurants;
+package com.javabootcamp.food_order.menu;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.javabootcamp.food_order.restaurants.Restaurant;
 
 @Entity
-public class Restaurant {
+public class Menu {
 	
 	@Id
 	private String id;
 	private String name;
 	private String description;
-	public Restaurant()
+	@ManyToOne
+	private Restaurant restaurant;
+	
+	
+	public Menu()
 	{
 		
 	}
@@ -20,11 +27,12 @@ public class Restaurant {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public Restaurant(String id, String name, String description) {
+	public Menu(String id, String name, String description,String RestaurantId) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
+		this.restaurant=new Restaurant(RestaurantId,"","");
 	}
 	public String getName() {
 		return name;
@@ -37,6 +45,12 @@ public class Restaurant {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	public Restaurant getRestaurant() {
+		return restaurant;
+	}
+	public void setRestaurant(Restaurant restaurant) {
+		this.restaurant = restaurant;
 	}
 
 }
